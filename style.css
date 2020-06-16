@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	text-align: left;
+}
+
+
+
+
+#list {
+	padding-top: 100px;
+	width: 50%;
+	margin: auto;
+	position: relative;
+}
+#list h1 {
+	text-align: center;
+	font-size: 40px;
+	color: red;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+#list #text {
+	margin-top: 5px;
+	border:1px solid gray;
+	border-radius: 10px;
+	outline: none;
+	display: inline-block;
+	width: 85%;
+	height: 40px;
+	font-size: 25px;
+	padding-left: 20px;
+}
+#list #enter {
+	display: inline-block;
+	transform: translate(0,-5px);
+	outline: none;
+	height: 40px;
+	width: 40px;
+}
+
+#list p {
+	font-size: 20px;
+}
+#list ul {
+	min-height: 100px;
+	max-height: 440px;
+	overflow: scroll;
+	list-style-type: none;
+	margin: 10px;
+}
+#list li {
+	/*border: 1px solid red;*/
+}
+#list .ection {
+	display: inline-block;
+	width: 75%;
+	margin: 10px 10px 15px 10px;
+	padding: 10px;
+	font-size: 24px;
+}
+#list .done p {
+	color: gray;
+	text-decoration: line-through;
+}
+#list .check {
+	cursor: pointer;
+	margin-left: 10px;
+	top: 50%;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1px solid gray;
+	border-radius: 50%;
+	transform: translate(0,5px);
+}
+.doneTask {
+	border:1px solid green!important;
+}
+ .doneTask::before {
+ 	content: "";
+	width: 2px;
+	height: 8px;
+	position: absolute;
+	background: green;
+	display: block;
+	left: 33%;
+	bottom: 15%;
+	transform: translate(-50%,0) rotate(-48deg);
+}
+.doneTask::after {
+	content: "";
+	width: 2px;
+	height: 20px;
+	position: absolute;
+	background: green;
+	display: block;
+	bottom: 10%;
+	left: 60%;
+	transform: translate(-40%,0) rotate(40deg);
+}
+#list .delete {
+	width: 17px;
+	height: 17px;
+	position: relative;
+	display: inline-block;
+}
+.delete::before {
+	left: 39%;
+	width: 4px;
+	height: 18px;
+	background: gray;
+	content: "";
+	display: none;
+	position: absolute;
+	transform: rotate(-45deg);
+}
+.delete::after {
+	left: 39%;
+	width: 4px;
+	height: 18px;
+	background: gray;
+	content: "";
+	display: none;
+	position: absolute;
+	transform: rotate(45deg);
+}
+#list li:hover  .delete div {
+	display: block;
+}
+#list li:hover  .delete::before,#list li:hover .delete::after {
+	display: block;
+}
+
+
+#info {
+	border-top: 1px solid gray;
+	border-radius: 2px;
+	position: relative;
+	padding-top: 5px;
+}
+
+#info p {
+	display: inline-block;
+	padding: 5px;
+}
+
+#choose {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+#choose p {
+	margin: 0 10px 0 10px;
+	display: inline-block;
+	color: black;
+}
+#choose .selected {
+	border: 1px solid red;
+	border-radius: 5px;
+	color: green;
+}
+#choose p:hover {
+	cursor: pointer;
+	color: green;
+}
+
+
+
+
+
+
+
+
